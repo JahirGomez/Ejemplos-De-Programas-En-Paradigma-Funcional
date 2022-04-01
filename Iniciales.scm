@@ -13,8 +13,8 @@
   (if (null? lista1)
     (print lista2)
     (cond
-    ((equal? (string-ref (~a lista1) 0) "(") ((let ([lista2 (toString1 (car lista1))])) (in (cdr lista1) lista2)))
-    (else (let ([lista2 (toString0 (car lista1))])) (in (cdr lista1) lista2))
+    ((equal? (string-ref (~a lista1) 0) "(") ((list lista2 (toString1 (car lista1))) (in (cdr lista1) lista2)))
+    (else (list lista2 (toString0 (car lista1))) (in (cdr lista1) lista2))
     )
   )
 )
