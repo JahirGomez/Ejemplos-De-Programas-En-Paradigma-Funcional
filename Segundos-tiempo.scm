@@ -16,11 +16,11 @@
 )
 
 (define (toMonths num)
-  (string-append (~a (/ num 18144000)) " meses")
+  (string-append (~a (/ num 2592000)) " meses")
 )
 
 (define (toYears num)
-  (string-append (~a (/ num 6622560000)) " años")
+  (string-append (~a (/ num 31536000)) " años")
   )
 
 (define (segundos-tiempo numero tipo)
@@ -37,3 +37,5 @@
 )
 
 (segundos-tiempo 60 "horas")
+(segundos-tiempo 18439 "semanas")
+(segundos-tiempo 94608000 "años")
